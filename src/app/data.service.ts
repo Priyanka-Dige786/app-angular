@@ -9,17 +9,17 @@ export class DataService {
 
   Select()
   {
-    return this.http.get("http://localhost:9898/emps");
+    return this.http.get("http://localhost:7879/emps");
   }
 
   SelectbyNo(No)
   {
-    return this.http.get("http://localhost:9898/emps/" + No);
+    return this.http.get("http://localhost:7879/emps/" + No);
   }
 
   Delete(No)
   {
-    return this.http.delete("http://localhost:9898/emps/" + No);
+    return this.http.delete("http://localhost:7879/emps/" + No);
   }
  
   Update(empobj)
